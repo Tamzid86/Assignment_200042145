@@ -1,4 +1,4 @@
-package assingment2;
+package assingment2.ControlCoupling;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package assingment2;
+package assingment2.ContentCoupling;
 
 public class ContentCoupling {
      class example

@@ -1,4 +1,4 @@
-package assingment2;
+package assingment2.StampCoupling;
 
 public class StampCoupling {
 

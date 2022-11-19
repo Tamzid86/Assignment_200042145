@@ -9,12 +9,31 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class TestCanlendar {
     @Test
-    public void DateCheck()
+    public void MonthCheck()
     {
         Calendar date1= new Calendar(31, 1,2003, NameOfMonths.January);
         Calendar ans= date1.CalculateNextDate();
         ans.printer();
         Calendar expected= new Calendar(1,2,2003, NameOfMonths.February);
+        assertEquals(expected.printer(), ans.printer());
+    }
+    @Test
+    public void YearCheck()
+    {
+        Calendar date1= new Calendar(31, 12,2003, NameOfMonths.December);
+        Calendar ans= date1.CalculateNextDate();
+        ans.printer();
+        Calendar expected= new Calendar(1,1,2004, NameOfMonths.January);
+        assertEquals(expected.printer(), ans.printer());
+
+    }
+    @Test
+    public void DateCheck()
+    {
+        Calendar date1= new Calendar(20, 1,2003, NameOfMonths.January);
+        Calendar ans= date1.CalculateNextDate();
+        ans.printer();
+        Calendar expected= new Calendar(21,1,2003, NameOfMonths.January);
         assertEquals(expected.printer(), ans.printer());
     }
     @Test

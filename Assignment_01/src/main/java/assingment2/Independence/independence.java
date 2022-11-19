@@ -1,4 +1,4 @@
-package assingment2;
+package assingment2.Independence;
 
 import java.util.Scanner;
 
